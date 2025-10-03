@@ -1,0 +1,50 @@
+\usepackage[utf8]{inputenc} % Codification
+\usepackage[english]{babel} % Writing idiom
+
+\usepackage[
+backend=biber,
+style=phys,
+]{biblatex}
+\addbibresource{refs.bib}
+
+\usepackage[export]{adjustbox} % Align images
+\usepackage{amsmath} % Extra commands for math mode
+\usepackage{amssymb} % Mathematical symbols
+\usepackage{anysize} % Personalize margins
+    \marginsize{2cm}{2cm}{2cm}{2cm} % {left}{right}{above}{below}
+\usepackage{appendix} % Appendices
+\usepackage{cancel} % Expression cancellation
+\usepackage{caption} % Figure numeration
+
+\usepackage{color} % Text coloring
+\usepackage{fancyhdr} % Head note and footnote
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\footnotesize IST} % Left of Head note
+    \fancyhead[R]{\footnotesize ULisboa} % Right of Head note
+    \fancyfoot[L]{\footnotesize Optimal Control} % Left of Footnote
+    \fancyfoot[C]{\thepage} % Center of Footnote
+    \fancyfoot[R]{\footnotesize Master in Mechanical Engineering} % Right of Footnote
+    \renewcommand{\footrulewidth}{0.4pt} % Footnote rule
+\usepackage{float} % Utilization of [H] in figures
+\usepackage{graphicx} % Figures in LaTeX
+\usepackage[colorlinks = true, plainpages = true, linkcolor = istblue, urlcolor = istblue, citecolor = istblue, anchorcolor = istblue]{hyperref}
+\usepackage{indentfirst} % First paragraph
+\usepackage{siunitx} % SI units
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{comment}
+
+% Random text (not needed)
+\usepackage{lipsum}
+\usepackage{duckuments}
+
+% New and re-newcommands
+\newcommand{\sen}{\operatorname{\sen}} % Sine function definition
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Specific rule definition
+\renewcommand{\appendixpagename}{\LARGE Appendices}
+
+% Colors
+\definecolor{istblue}{RGB}{3, 171, 230}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
